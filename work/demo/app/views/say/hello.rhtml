@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Hello, Rails!</title>
+	</head>
+	<body>
+		<h1>Hello from Rails!</h1>
+		<ul>
+			<li>Addition: 1 + 2 = <%= 1+2 %></li>
+			<li>Concatenation: <%= "cow" + "boy" %></li>
+			<li>Time in 1 hour: <%= 1.hour.from_now %></li>
+			<% 3.times do %>
+			Ho! <br>
+			<% end %>
+			Email: <%= h("My e-mail <bob@me.com>") %>
+			<hr>
+			It is now <%= @time %>
+			<hr>
+			<%= link_to "Goodbye!", :action => "goodbye" %>
+	</body>
+</html>
